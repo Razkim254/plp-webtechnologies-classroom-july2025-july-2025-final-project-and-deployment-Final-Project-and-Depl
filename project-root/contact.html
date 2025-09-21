@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | KIMTECH ELECTRICALS & HOUSEHOLDS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Chat Intro Bubble -->
+    <div id="chatIntro" class="chat-bubble">
+      👋 Hi there! Let us know how we can help you today.
+    </div>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+      <h2>Reach Us</h2>
+      <p><strong>Phone:</strong> +254716222992</p>
+      <p><strong>Email:</strong> razkim4@gmail.com</p>
+      <p><strong>Location:</strong> Murang'a Town, Kenya</p>
+    </section>
+
+    <!-- WhatsApp Section -->
+    <section class="whatsapp">
+      <h2>Chat with Us on WhatsApp</h2>
+      <p>Need quick help or want to place an order? Tap below to start a chat.</p>
+      <a href="https://wa.me/254716222992" target="_blank" class="btn whatsapp-btn">
+        📱 Message Us on WhatsApp
+      </a>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.123456789!2d37.150000!3d-0.716000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f6b123456789%3A0xabcdef123456789!2sMurang%27a%20Town!5e0!3m2!1sen!2ske!4v1695123456789"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="service">Service Type:</label>
+        <select id="service" required>
+          <option value="">-- Select a service --</option>
+          <option value="installation">Electrical Installation</option>
+          <option value="repair">Appliance Repair</option>
+          <option value="purchase">Product Purchase</option>
+          <option value="consultation">Consultation</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <div id="confirmation" class="hidden">✅ Thank you! Your message has been sent.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KIMTECH ELECTRICALS & HOUSEHOLDS. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
